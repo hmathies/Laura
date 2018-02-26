@@ -1,37 +1,109 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Laura O'Berry Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- LB favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <!-- Add your site or application content here -->
+    <style>
+        img {
+            width: 400px;
+            /* display: block; */
+        }
+    </style>
+    <header class="clearfix" style="height: 50vh; background: url(img/background1.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px;">
+        <div class="container">
+            <img src="#" alt="Laura O'Berry Logo">
+        </div>
+    </header>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+    <div class="container">
+
+        <div class="display-4 text-center">
+            Laura O'Berry
+        </div>
+        <div class="row">
+            <section class="content text-justify text-info bg-faded col" id="mission">
+                <p class="lead">I love helping people discover their <em>purpose</em> in life so that they can make an <strong>impact</strong> in their communities.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </section>
+
+            <section class="content text-center text-md-left" id="services">
+                <article class="figure col">
+                    <h3 class="text-secondary">Nutrition</h3>
+                    <img class="rounded figure-img img-fluid" src="img/placeholder1.jpg" alt="sample image">
+
+                    <figcaption class="figure-caption bg-light text-info">I'll coach you through a nutritional plan based on <em>your</em> goals and needs.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </figcaption>
+                </article>
+
+                <article class="figure col">
+                    <h3 class="text-secondary">Fitness</h3>
+                    <img class="rounded figure-img img-fluid" src="img/fitnessPlaceholder.jpg" alt="sample image">
+
+                    <figcaption class="figure-caption bg-light text-info">My husband and I offer a free fitness camp two times a week which includes: <em>low impact and high impact</em> exercies.</figcaption>
+
+                </article>
+
+                <article class="figure col">
+                    <h3 class="text-secondary">Life Coach</h3>
+                    <img class="rounded figure-img img-fluid" src="img/coachPlaceholder.jpg" alt="sample image">
+                    <figcaption class="figure-caption bg-light text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</figcaption>
+
+                </article>
+
+            </section>
+        </div>
+    </div>
+    <!-- container -->
+
+
+
+    <!-- end site content -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
 </html>

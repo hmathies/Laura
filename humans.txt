@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Heather Mathies -- Developer and Designer -- 2018
 
 # THANKS
 
-    <name>
+    Laura O'Berry
 
 # TECHNOLOGY COLOPHON
 
