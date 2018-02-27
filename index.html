@@ -25,8 +25,15 @@
     <!-- Add your site or application content here -->
     <style>
         img {
-            width: 400px;
-            /* display: block; */
+            width: 100%;
+            height: 200px;
+            max-height: 200px;
+
+
+        }
+
+        section {
+            float: left;
         }
     </style>
     <header class="clearfix" style="height: 50vh; background: url(img/background1.jpg) no-repeat center center; background-size: cover; margin-bottom: 20px;">
@@ -35,44 +42,64 @@
         </div>
     </header>
 
-    <div class="container">
 
-        <div class="display-4 text-center">
-            Laura O'Berry
-        </div>
+
+    <div class="display-4 text-center">
+        Laura O'Berry
+    </div>
+    <div class="container">
         <div class="row">
-            <section class="content text-justify text-info bg-faded col" id="mission">
+            <section class="content text-justify text-info bg-faded col-sm-12" id="mission">
                 <p class="lead">I love helping people discover their <em>purpose</em> in life so that they can make an <strong>impact</strong> in their communities.
                 </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </section>
 
-            <section class="content text-center text-md-left" id="services">
-                <article class="figure col">
+            <section class="content text-center text-md-left col-sm-12 col-md-4" id="services">
+                <article class="figure">
                     <h3 class="text-secondary">Nutrition</h3>
-                    <img class="rounded figure-img img-fluid" src="img/placeholder1.jpg" alt="sample image">
-
+                    <img class="rounded figure-img img-fluid" src="img/placeholder1.jpg" alt="Nutrition image">
                     <figcaption class="figure-caption bg-light text-info">I'll coach you through a nutritional plan based on <em>your</em> goals and needs.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </figcaption>
                 </article>
 
-                <article class="figure col">
-                    <h3 class="text-secondary">Fitness</h3>
-                    <img class="rounded figure-img img-fluid" src="img/fitnessPlaceholder.jpg" alt="sample image">
+                <div class="row no-gutters">
+                    <div class="col-4"><img class="img-thumbnail" src="img/placeholder1.jpg" alt="image"></div>
+                    <div class="col-4"><img class="img-thumbnail" src="img/placeholder1.jpg" alt="image"></div>
+                    <div class="col-4 "><img class="img-thumbnail" src="img/placeholder1.jpg" alt="image"></div>
+                </div>
 
-                    <figcaption class="figure-caption bg-light text-info">My husband and I offer a free fitness camp two times a week which includes: <em>low impact and high impact</em> exercies.</figcaption>
+            </section>
+            <section class="content text-center text-md-left col-sm-12 col-md-4" id="services">
+                <article class="figure">
+                    <h3 class="text-secondary">Fitness</h3>
+                    <img class="rounded figure-img img-fluid" src="img/fitnessPlaceholder.jpg" alt="Fitness image">
+                    <figcaption class="figure-caption bg-light text-info">My husband and I offer a free fitness camp two times a week which includes: <em>low impact and high impact</em> exercies.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</figcaption>
 
                 </article>
-
-                <article class="figure col">
+                <div class="row no-gutters">
+                    <div class="col-4"><img class="img-thumbnail" src="img/exercisePlaceholder.jpg" alt="image"></div>
+                    <div class="col-4"><img class="img-thumbnail" src="img/exercisePlaceholder.jpg" alt="image"></div>
+                    <div class="col-4"><img class="img-thumbnail" src="img/exercisePlaceholder.jpg" alt="image"></div>
+                </div>
+            </section>
+            <section class="content text-center text-md-left col-sm-12 col-md-4" id="services">
+                <article class="figure">
                     <h3 class="text-secondary">Life Coach</h3>
-                    <img class="rounded figure-img img-fluid" src="img/coachPlaceholder.jpg" alt="sample image">
+                    <img class="rounded figure-img img-fluid" src="img/coachPlaceholder.jpg" alt="Life Coach image">
                     <figcaption class="figure-caption bg-light text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</figcaption>
 
                 </article>
+                <div class="row no-gutters">
+                    <div class="col-4"><img class="img-thumbnail" src="img/coachPlaceholder.jpg" alt="image"></div>
+                    <div class="col-4"><img class="img-thumbnail" src="img/coachPlaceholder.jpg" alt="image"></div>
+                    <div class="col-4"><img class="img-thumbnail" src="img/coachPlaceholder.jpg" alt="image"></div>
+
+                </div>
 
             </section>
         </div>
