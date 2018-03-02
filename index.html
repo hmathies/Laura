@@ -25,15 +25,12 @@
     <!-- Add your site or application content here -->
 
     <header class="clearfix" style="height: 50vh; background: url(img/background1.jpg) no-repeat center center; background-size: cover">
-        <div class="container">
+        <div class="container" id="main">
 
             <img src="img/Logomakr_3IpNtL.png" alt="Laura O'Berry Logo" class="img-fluid" style="text-shadow: 10px; z-index: 999;">
         </div>
     </header>
     <style>
-        .logo {
-            width: 100px;
-        }
     </style>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
@@ -46,8 +43,8 @@
         <div class="container">
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
@@ -57,16 +54,23 @@
                         <a class="nav-link" href="#contact">Contact me</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                <!-- <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Add your email here!">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Click to receive my Newsletter!</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
-
+    <!--closing nav container -->
+    <style>
+        #services {
+            display: block;
+            margin-top: 3.5em;
+        }
+    </style>
 
     <div class="container">
+        <!-- About Laura and services content -->
         <div class="row">
             <section class="content text-justify text-info bg-faded col-sm-12" id="mission">
                 <p class="lead">I love helping people discover their <em>purpose</em> in life so that they can make an <strong>impact</strong> in their communities.
@@ -76,8 +80,8 @@
                     consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </section>
-            <div id="services" class="mx-auto">
-                <h2 class="mt-3 mb-3">My Services</h2>
+            <div class="mx-auto" id="services">
+                <h2 class="mt-3 mb-3 bg-light">My Services</h2>
             </div>
             <div class="container">
                 <div class="row">
@@ -98,7 +102,7 @@
                         </div>
 
                     </section>
-                    <section class="content text-center text-md-left col-sm-12 col-md-4" id="">
+                    <section class="content text-center text-md-left col-sm-12 col-md-4">
                         <article class="figure" id="fitness">
                             <h3 class="text-secondary">Fitness Classes</h3>
                             <img class="rounded figure-img img-fluid" src="img/fitnessPlaceholder.jpg" alt="Fitness image">
@@ -137,21 +141,53 @@
         </div>
 
     </div>
-    <!-- container -->
-    <div class="container mt-4 text-center">
-        <h2>Contact me</h2>
-        <form action="email" id="contact">
-            <label for="name">name</label>
-            <input type="text" placeholder="your full name">
-            <label for="email">email</label>
-            <input type="text" placeholder="myemail@email.com">
-            <label for="message">message</label>
-            <textarea type="text" placeholder="your message"></textarea>
+    <!-- about Laura and services content div closing -->
 
+
+
+    <div class="container mt-4" id="contact">
+        <!-- div with form for contact -->
+        <div class="text-center">
+            <h2>Contact me</h2>
+            <h5>I will message you directly and send you my newsletter</h5>
+        </div>
+
+        <form class="form">
+
+            <fieldset class="form-group">
+                <legend></legend>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="name">Name</label>
+                    <input class="form-control" type="text" id="js-name" placeholder="Your Name">
+                </div>
+                <!-- form-group -->
+
+                <div class="form-group">
+                    <label class="form-control-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="js-email" placeholder="Your email" required name="_replyto">
+                    <input type="hidden" name="_subject" value="Email from Laura O'Berry site" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                </div>
+                <!-- form-group -->
+
+                <div class="form-group">
+                    <label class="form-control-label" for="message">Your message</label>
+                    <div class="textarea">
+                        <textarea type="text" name="message" rows="8" class="form-control" id="js-message" placeholder="Write your message here, or leave this blank and press send to receive my newsletter"></textarea>
+                    </div>
+                    <!-- input-group -->
+                </div>
+                <!-- form-group -->
+
+                <button class="btn btn-primary" name="submit" type="submit">Send</button>
+
+            </fieldset>
+            <!-- fieldset -->
         </form>
+
     </div>
-
-
+    <!-- closing contact container -->
 
     <!-- end site content -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -172,7 +208,7 @@
         ga('create', 'UA-XXXXX-Y', 'auto');
         ga('send', 'pageview')
     </script>
-    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
