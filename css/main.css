@@ -101,6 +101,16 @@ textarea {
        width: 100px;
    }
 
+   body {
+  position: relative;
+  }
+
+  #services {
+      display: block;
+      margin-top: 3em;
+      margin-bottom: 3em;
+  }
+
 
 
 
