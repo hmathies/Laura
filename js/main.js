@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
 
-       $('#fieldset').submit(function(event) {
+       $('fieldset').submit(function(event) {
            event.preventDefault();
 
            $.ajax({
