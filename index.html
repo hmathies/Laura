@@ -146,16 +146,12 @@
 
     <div class="container mt-4" id="contact">
         <!-- div with form for contact -->
-        <div class="text-center">
-            <h2>Contact me</h2>
-            <h5>I will message you directly and send you my newsletter</h5>
-        </div>
 
-        <form action="https://formspree.io/godslaura@yahoo.com" method="POST">
+        <form>
 
             <fieldset class="form-group">
-                <legend></legend>
-
+                <legend class="text-center">Contact me</legend>
+                <h5>I will message you directly and send you my newsletter</h5>
                 <div class="form-group ">
                     <label class="form-control-label" for="name ">Name</label>
                     <input class="form-control" name="name" type="text" id="js-name" placeholder="Your Name" required />
@@ -179,7 +175,7 @@
                     <!-- input-group -->
                 </div>
                 <!-- form-group -->
-                <input type="submit" target="_blank" value="Send">
+                <input type="submit" id="submit" value="Send">
                 <!-- <button class="btn btn-primary" name="submit" type="submit">Send</button> -->
 
             </fieldset>

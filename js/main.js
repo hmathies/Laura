@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
 
-       $('fieldset').submit(function(event) {
+       $('#fieldset').submit(function(event) {
            event.preventDefault();
 
            $.ajax({
@@ -15,6 +15,7 @@ $( document ).ready(function() {
                },
                success: function(data){
                    $("fieldset").trigger("reset"); //reset form
+                   console.log("submit was clicked");
                    alert("Thanks for getting in touch.  I appreciate you!");
 
                }
