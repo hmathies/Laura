@@ -152,21 +152,22 @@
             <h5>I will message you directly and send you my newsletter</h5>
         </div>
 
-        <form class="form">
+        <form>
 
             <fieldset class="form-group">
                 <legend></legend>
 
                 <div class="form-group">
                     <label class="form-control-label" for="name">Name</label>
-                    <input class="form-control" type="text" id="js-name" placeholder="Your Name">
+                    <input class="form-control" name="name" type="text" id="js-name" placeholder="Your Name" required>
                 </div>
                 <!-- form-group -->
 
                 <div class="form-group">
                     <label class="form-control-label" for="email">Email</label>
-                    <input class="form-control" type="email" id="js-email" placeholder="Your email" required name="_replyto">
+                    <input class="form-control" type="email" id="js-email" placeholder="Your email" name="_replyto" required>
                     <input type="hidden" name="_subject" value="Email from Laura O'Berry site" />
+                    <input type="hidden" name="_cc" value="hlmathies@gmail.com" />
                     <input type="text" name="_gotcha" style="display:none" />
                 </div>
                 <!-- form-group -->
@@ -183,10 +184,18 @@
                 <button class="btn btn-primary" name="submit" type="submit">Send</button>
 
             </fieldset>
-            <!-- fieldset -->
+            <!-- fieldset closing div for contact me-->
         </form>
-
     </div>
+
+    <div class="bg-secondary">
+
+        <a href="#" target="_blank"><img class="connections" src="img/facebook" height="40" width="40" alt="Facebook"></a>
+        <a href="#" target="_blank"><img class="connections" src="img/twitter" height="40" width="40" alt="Twitter"></a>
+        <a href="#" target="_blank"><img class="connections" src="img/herbalLife" height="40" width="40" alt="Herbal Life"></a>
+        <p class="navbar-text mr">© 2018 - Site designed and built by Heather Mathies</p>
+    </div>
+
     <!-- closing contact container -->
 
     <!-- end site content -->
