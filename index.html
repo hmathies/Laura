@@ -147,40 +147,21 @@
     <div class="container mt-4" id="contact">
         <!-- div with form for contact -->
 
-        <form>
+        <section class="">
 
-            <fieldset class="form-group">
-                <legend class="text-center">Contact me</legend>
-                <h5>I will message you directly and send you my newsletter</h5>
-                <div class="form-group ">
-                    <label class="form-control-label" for="name ">Name</label>
-                    <input class="form-control" name="name" type="text" id="js-name" placeholder="Your Name" required />
-                </div>
-                <!-- form-group -->
+            <form class="span6 flex column">
+                <legend>Contact me</legend>
+                <input id="js-name" class="span6" type="text" name="name" placeholder="Name" required />
+                <input id="js-email" class="span6" type="email" placeholder="Email Address" required name="_replyto" />
+                <input type="hidden" name="_subject" value="Email from my portfolio site" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <textarea id="js-message" class="span6" name="message" rows="8" placeholder="Write your message here."></textarea>
+                <button type="submit " name="submit" class="submit">Send</button>
+            </form>
+            <!--/.span6-->
+        </section>
 
-                <div class="form-group ">
-                    <label class="form-control-label" for="email ">Email</label>
-                    <input class="form-control" type="email " id="js-email " placeholder="Your email " name="_replyto " required />
-                    <input type="hidden" name="_subject " value="Email from Laura O 'Berry site" />
-                    <input type="hidden" name="_cc" value="hlmathies@gmail.com" />
-                    <input type="text" name="_gotcha" style="display:none" />
-                </div>
-                <!-- form-group -->
 
-                <div class="form-group">
-                    <label class="form-control-label" for="message">Your message</label>
-                    <div class="textarea">
-                        <textarea type="text" name="message" rows="8" class="form-control" id="js-message" placeholder="Write your message here, or leave this blank and press send to receive my newsletter"></textarea>
-                    </div>
-                    <!-- input-group -->
-                </div>
-                <!-- form-group -->
-                <input type="submit" id="submit" value="Send">
-                <!-- <button class="btn btn-primary" name="submit" type="submit">Send</button> -->
-
-            </fieldset>
-            <!-- fieldset closing div for contact me-->
-        </form>
     </div>
 
     <div class="bg-secondary  pt-3 pb-3">
@@ -215,7 +196,7 @@
         ga('create', 'UA-XXXXX-Y', 'auto');
         ga('send', 'pageview')
     </script>
-    <script src="js/jquery-3.3.1.slim.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/popper.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
     <script src="https://www.google-analytics.com/analytics.js " async defer></script>
