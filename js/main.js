@@ -14,7 +14,7 @@ $( document ).ready(function() {
                    message: $('#js-message').val()
                },
                success: function(data){
-                   $("fieldset").trigger("reset"); //reset form
+                   $("form").trigger("reset"); //reset form
                    console.log("submit was clicked");
                    alert("Thanks for getting in touch.  I appreciate you!");
                },

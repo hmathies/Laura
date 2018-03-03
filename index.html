@@ -147,17 +147,17 @@
     <div class="container mt-4" id="contact">
         <!-- div with form for contact -->
 
-        <section class="col-md-6 col-lg-6 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
+        <section class="">
 
-            <form class="span6 flex column">
-                <h1 style="text-align: center">Want to <span id="chat">chat</span> with me?</h1>
-                <input id="js-name" class="span6" type="text" name="name" placeholder="Name" required />
-                <input id="js-email" class="span6" type="email" placeholder="Email Address" required name="_replyto" />
+            <form class="form-group">
+                <legend>Contact me</legend>
+                <input id="js-name" class="form-control" type="text" name="name" placeholder="Name" required />
+                <input id="js-email" class="form-control" type="email" placeholder="Email Address" required name="_replyto" />
                 <input type="hidden" name="_subject" value="Email from my portfolio site" />
                 <input type="hidden" name="_cc" value="hlmathies@gmail.com" />
                 <input type="text" name="_gotcha" style="display:none" />
-                <textarea id="js-message" class="span6" name="message" rows="8" placeholder="Start chatting here!"></textarea>
-                <button type="submit " name="submit" class="btn btn-custom background-switch btn-xl submit">Chat!</button>
+                <textarea id="js-message" class="form-control" name="message" rows="8" placeholder="Start chatting here!"></textarea>
+                <button type="submit " name="submit" class="btn-info submit">Send</button>
             </form>
             <!--/.span6-->
         </section>
