@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
 
-       $('form').submit(function(event) {
+       $('fieldset').submit(function(event) {
            event.preventDefault();
 
            $.ajax({
@@ -14,12 +14,12 @@ $( document ).ready(function() {
                    message: $('#js-message').val()
                },
                success: function(data){
-                   $("form").trigger("reset"); //reset form
+                   $("fieldset").trigger("reset"); //reset form
                    console.log("submit was clicked");
                    alert("Thanks for getting in touch.  I appreciate you!");
                },
                error: function(data){
-                  $("form").trigger("reset"); //reset form
+                  $("fieldset").trigger("reset"); //reset form
                   alert('Uh oh, something went wrong. Please try again.');
 
                }
