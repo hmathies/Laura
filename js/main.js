@@ -17,6 +17,7 @@ $( document ).ready(function() {
                    $("form").trigger("reset"); //reset form
                    console.log("submit was clicked");
                    alert("Thanks for getting in touch.  I appreciate you!");
+                   $('form').find('#js-name, #js-email, #js-message').val('');
                },
                error: function(data){
                   $("form").trigger("reset"); //reset form
