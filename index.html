@@ -150,14 +150,17 @@
         <section class="">
 
             <form class="form-group">
-                <legend>Contact me</legend>
+                <legend class="text-center text-muted">Contact me</legend>
+                <label class+ "form-control-label" for="js-name">Your name</label>
                 <input id="js-name" class="form-control" type="text" name="name" placeholder="Name" required />
+                <label class+ "form-control-label" for="js-email">Your email</label>
                 <input id="js-email" class="form-control" type="email" placeholder="Email Address" required name="_replyto" />
                 <input type="hidden" name="_subject" value="Email from my portfolio site" />
                 <input type="hidden" name="_cc" value="hlmathies@gmail.com" />
                 <input type="text" name="_gotcha" style="display:none" />
+                <label class+ "form-control-label" for="js-message">Your message</label>
                 <textarea id="js-message" class="form-control" name="message" rows="8" placeholder="Write your message here."></textarea>
-                <button type="submit " name="submit" class="btn-info submit">Send</button>
+                <button type="submit " name="submit" data-toggle="popover" title="Sign-up" data-trigger="hover" data-content="By clicking send, you will be signed up to receive my newsletters" class="btn btn-outline-secondary submit mt-3">Send</button>
             </form>
             <!--/.span6-->
         </section>
@@ -165,12 +168,14 @@
 
     <div class="bg-secondary  pt-3 pb-3">
         <div class="container">
-            <a href="https://www.facebook.com/laura.oberry.16" target="_blank"><img class="connections" src="img/facebook.svg" height="40" width="40" alt="Facebook"></a>
-            <a href="#" target="_blank"><img class="connections" src="img/twitter.svg" height="40" width="40" alt="Twitter"></a>
-            <a href="https://www.instagram.com/laura.oberry.16/" target="_blank"><img class="connections" src="img/instagram.svg" height="40" width="40" alt="Instagram"></a>
+            <div class="row col-sm-12">
+                <a href="https://www.facebook.com/laura.oberry.16" target="_blank"><img class="connections pr-1" src="img/facebook.svg" height="40" width="40" alt="Facebook"></a>
+                <a href="#" target="_blank"><img class="connections pr-1" src="img/twitter.svg" height="40" width="40" alt="Twitter"></a>
+                <a href="https://www.instagram.com/laura.oberry.16/" target="_blank"><img class="connections pr-1" src="img/instagram.svg" height="40" width="40" alt="Instagram"></a>
 
-            <a class="navbar-brand" href="#"><img src="img/Logomakr_3IpNtL.png" alt="Laura O'Berry Logo " class="logo "></a>
-            <p class="navbar-text float-right text-light "><small>© 2018 - Site designed and built by Heather Mathies</small></p>
+                <a class="navbar-brand" href="#"><img src="img/Logomakr_3IpNtL.png" alt="Laura O'Berry Logo " class="logo "></a>
+                <p class="navbar-text text-md-right text-light "><small>© 2018 - Site designed and built by Heather Mathies</small></p>
+            </div>
         </div>
     </div>
 
@@ -199,6 +204,12 @@
     <script src="js/popper.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
     <script src="https://www.google-analytics.com/analytics.js " async defer></script>
+
+    <script>
+        $(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </body>
 
 </html>
