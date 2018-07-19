@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+//beginning of script file  
+>>>>>>> c8da896... Finishing up
 $( document ).ready(function() {
 
        $('form').submit(function(event) {
