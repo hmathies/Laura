@@ -29,3 +29,5 @@ $( document ).ready(function() {
 
  $('body').scrollspy({ target: '#navbarToggler' });
  });
+
+ // end of script file
