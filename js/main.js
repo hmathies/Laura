@@ -1,4 +1,4 @@
-
+//beginning of script file
 $( document ).ready(function() {
 
        $('form').submit(function(event) {
